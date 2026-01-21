@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import projects from '../content/projects.json';
+---
+
+<BaseLayout title="Projects — Safia Abdalla">
+  <main class="container">
+    <nav class="nav">
+      <a href="https://captainsafia.com">← captainsafia.com</a>
+      <a href="https://github.com/captainsafia">GitHub</a>
+    </nav>
+
+    <header class="header">
+      <h1>Projects</h1>
+      <p class="intro">
+        A collection of tools and libraries I've built. 
+        All are open source and designed to solve problems I'm interested in.
+      </p>
+    </header>
+
+    <section class="projects" aria-label="Project list">
+      {projects.map((project) => (
+        <ProjectCard
+          title={project.title}
+          description={project.description}
+          url={project.url}
+          accentColor={project.accentColor}
+        />
+      ))}
+    </section>
+  </main>
+</BaseLayout>
+
+<style>
+  .container {
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 3rem 0;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+  }
+
+  .nav a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+
+  .nav a:hover {
+    color: var(--color-accent);
+  }
+
+  .header {
+    margin-bottom: 2.5rem;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .intro {
+    color: var(--color-text-muted);
+    font-size: 0.9375rem;
+    max-width: 32rem;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  @media (max-width: 640px) {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media print {
+    .container {
+      padding: 1rem 0;
+    }
+
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

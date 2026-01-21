@@ -1,0 +1,50 @@
+[
+  {
+    "title": "stitch",
+    "description": "An intent log for agents and humans. Records the \"why\" behind code changes, linking intent documents to git commits and forming a semantic DAG on top of git history.",
+    "url": "https://github.com/captainsafia/stitch",
+    "accentColor": "#6366f1"
+  },
+  {
+    "title": "hone",
+    "description": "A CLI integration test runner for command-line applications. Write tests in a simple DSL that executes real shell commands and asserts on output, exit codes, and files.",
+    "url": "https://github.com/captainsafia/hone",
+    "accentColor": "#DEA584"
+  },
+  {
+    "title": "grove",
+    "description": "A CLI tool for working with Git worktrees. Initialize bare clones, create and navigate worktrees, sync with origin, and prune merged branches.",
+    "url": "https://github.com/captainsafia/grove",
+    "accentColor": "#22c55e"
+  },
+  {
+    "title": "nuggy",
+    "description": "A command-line tool for exploring NuGet package metadata, viewing package contents, and managing feed sources.",
+    "url": "https://github.com/captainsafia/nuggy",
+    "accentColor": "#512BD4"
+  },
+  {
+    "title": "burrow",
+    "description": "A directory-scoped secrets manager. Secrets are stored outside your repos in a local SQLite store with inheritance from parent directories.",
+    "url": "https://github.com/captainsafia/burrow",
+    "accentColor": "#a855f7"
+  },
+  {
+    "title": "installer",
+    "description": "A GitHub release installer service. Generates shell and PowerShell scripts to download and install binaries from GitHub releases.",
+    "url": "https://github.com/captainsafia/installer",
+    "accentColor": "#f97316"
+  },
+  {
+    "title": "relnotify",
+    "description": "A Rust library for checking GitHub Releases to notify CLI users of available updates, with built-in caching and disk persistence.",
+    "url": "https://github.com/captainsafia/relnotify",
+    "accentColor": "#DEA584"
+  },
+  {
+    "title": "gh-release-update-notifier",
+    "description": "A TypeScript library for checking GitHub Releases to notify CLI users of available updates, with built-in caching and disk persistence.",
+    "url": "https://github.com/captainsafia/gh-release-update-notifier",
+    "accentColor": "#3178C6"
+  }
+]
